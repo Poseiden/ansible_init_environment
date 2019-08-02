@@ -1,0 +1,10 @@
+---
+- name: install ansible
+  pip:
+    name: ansible
+    state: present
+  become: yes
+
+- name: create ansible config folder
+  file: path=/etc/ansible state=directory mode=0755
+

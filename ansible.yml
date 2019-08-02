@@ -1,0 +1,6 @@
+---
+- name: install ansible
+  hosts: all
+  remote_user: root
+  roles: 
+    - ansible

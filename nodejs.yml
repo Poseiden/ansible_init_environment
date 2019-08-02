@@ -1,0 +1,6 @@
+---
+- name: install nodejs
+  hosts: all
+  remote_user: root
+  roles: 
+    - geerlingguy.nodejs
