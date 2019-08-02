@@ -15,14 +15,3 @@
 #### Nginx 初始化
 `ansible-playbook -i your_host_path nginx.yml `
 
-```
-#! /bin/bash
-
-docker run --rm -v /root/pgsql/bin:/root/pgsql/bin 
--v /etc/backup/data:/root/backups 
--v /etc/backup/config:/tmp -v /etc/backup/log:/log backup:latest backup perform --trigger postgres_backup 
--c /tmp/config.rb -l /log/
-```
-
-`chmod +x /etc/cron.daily/run_backup.sh`
-
